@@ -1,9 +1,10 @@
-* {
+/* * {
   border: solid red 1px;
-}
+} */
 
 .page {
   background-color: #000000;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: white;
+  margin: 0;
 }

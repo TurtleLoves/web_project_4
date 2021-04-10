@@ -1,0 +1,79 @@
+.modal {
+    position: fixed;
+    box-sizing: border-box;
+    width: 430px;
+    height: 330px;
+    left: calc(50% - 215px);
+    top: calc(50% - 165px);
+    background-color: white;
+    display: none;
+}
+
+.modal__close-icon {
+  position: relative;
+  top: -40px;
+  right: -430px;
+  width: 40px;
+  height: 40px;
+  transition: .4s;
+}
+
+.modal__close-icon:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 34px auto 0;
+  width: 358px;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: black;
+}
+
+.modal__name {
+  border: none;
+  margin: 30px auto 0;
+  width: 358px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.modal__about-me {
+  border: none;
+  margin: 30px auto 0;
+  width: 358px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.modal__line {
+  margin: 13px auto 0;
+  width: 358px;
+  opacity: 0.2;
+  border: 1px solid #000000;
+}
+
+.modal__submit {
+  margin: 48px auto 36px;
+  width: 358px;
+  height: 50px;
+  background-color: black;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 22px;
+  color: white;
+  transition: .4s;
+}
+
+.modal__submit:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+.modal__display {
+  display: flex;
+}
