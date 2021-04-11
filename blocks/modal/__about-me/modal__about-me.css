@@ -1,0 +1,14 @@
+.modal__about-me {
+  border: none;
+  margin: 30px auto 0;
+  width: 358px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .modal__about-me {
+    width: 238px;
+  }
+}

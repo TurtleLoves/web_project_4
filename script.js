@@ -8,6 +8,7 @@ let modal__close = document.querySelector(".modal__close-icon");
 let modal__form = document.querySelector(".modal__form");
 let elements = document.querySelector(".elements");
 let elements__heart = document.querySelector(".elements__heart");
+const hearts = Array.from(document.querySelectorAll(".elements__heart"));
 
 function open() {
     modal__name.value = profile__name.textContent;
@@ -26,17 +27,15 @@ function submit(evt) {
   close();
 }
 
-function heart() {
-  if(elements.classList.contains('elements__heart_active')){
-          elements.classList.remove('elements__heart_active');
-          elements.classList.add('elements__heart');
-      }else{
-          elements.classList.remove('elements__heart');
-          elements.classList.add('elements__heart_active');
-      }
+function toggleHeart(evt) {
+  evt.target.classList.toggle("elements__heart_active");
 }
 
 profile__edit.addEventListener("click", open);
 modal__close.addEventListener("click", close);
 modal__form.addEventListener("submit", submit);
-elements__heart.addEventListener("click", heart);
+
+for (const heart of hearts) {
+    heart.addEventListener("click", toggleHeart);
+}
+

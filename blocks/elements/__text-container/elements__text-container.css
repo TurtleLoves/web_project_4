@@ -1,0 +1,4 @@
+.elements__text-container {
+  display: flex;
+  justify-content: space-between;
+}

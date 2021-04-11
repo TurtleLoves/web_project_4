@@ -1,145 +1,24 @@
-.elements__grid {
-  display: grid;
+@import url(./__container/elements__container.css);
+@import url(./__grid/elements__grid.css);
+@import url(./__heart/elements__heart.css);
+@import url(./__image/elements__image.css);
+@import url(./__text-container/elements__text-container.css);
+@import url(./__text/elements__text.css);
+
+.elements {
   width: 880px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 17px;
-  row-gap: 20px;
   margin: 50px auto 0;
 }
 
-.elements__container {
-  width: 282px;
-  height: 361px;
-  background-color: white;
-}
-
-.elements__image {
-  width: 282px;
-  height: 282px;
-}
-
-.elements__text-container {
-  display: flex;
-  justify-content: space-between;
-}
-.elements__text {
-  font-weight: 900;
-  max-width: 220px;
-  margin: 25px 0 31px 15px;
-  font-size: 24px;
-  line-height: 29px;
-  color: black;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.elements__heart {
-  background-image: url(../../images/heart.svg);
-  background-color: transparent;
-  width: 21px;
-  height: 19px;
-  border: none;
-  padding: 0;
-  margin: 31px 15px 31px 0;
-  transition: 0.4s;
-}
-
-.elements__heart_active {
-  background-image: url(../../images/heart-active.svg);
-  background-color: transparent;
-  width: 21px;
-  height: 19px;
-  border: none;
-  padding: 0;
-  margin: 31px 15px 31px 0;
-  transition: 0.4s;
-}
-
-.elements__heart:hover {
-  opacity: 0.6;
-  cursor: pointer;
-}
-
-/* .elements__heart:active {
-  background-image: url(../../images/heart-active.svg);
-} */
-
-.elements__heart:focus {
-  outline: 0;
-}
-
-@media screen and (max-width: 320px) {
-  .elements__grid {
-    display: grid;
-    width: 880px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 17px;
-    row-gap: 20px;
-    margin: 50px auto 0;
+@media screen and (max-width: 880px) {
+  .elements {
+    width: 600px;
   }
-  
-  .elements__container {
+}
+
+@media screen and (max-width: 600px) {
+  .elements {
     width: 282px;
-    height: 361px;
-    background-color: white;
-  }
-  
-  .elements__image {
-    width: 282px;
-    height: 282px;
-  }
-  
-  .elements__text-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .elements__text {
-    font-weight: 900;
-    max-width: 220px;
-    margin: 25px 0 31px 15px;
-    font-size: 24px;
-    line-height: 29px;
-    color: black;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-  
-  .elements__heart {
-    background-image: url(../../images/heart.svg);
-    background-color: transparent;
-    width: 21px;
-    height: 19px;
-    border: none;
-    padding: 0;
-    margin: 31px 15px 31px 0;
-    transition: 0.4s;
-  }
-  
-  .elements__heart_active {
-    background-image: url(../../images/heart-active.svg);
-    background-color: transparent;
-    width: 21px;
-    height: 19px;
-    border: none;
-    padding: 0;
-    margin: 31px 15px 31px 0;
-    transition: 0.4s;
-  }
-  
-  .elements__heart:hover {
-    opacity: 0.6;
-    cursor: pointer;
-  }
-  
-  /* .elements__heart:active {
-    background-image: url(../../images/heart-active.svg);
-  } */
-  
-  .elements__heart:focus {
-    outline: 0;
+    margin: 36px auto 0;
   }
 }

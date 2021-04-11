@@ -1,16 +1,17 @@
 # Project 4: Around The U.S.
 
-### Overview
+**GitHub**
+Link: https://turtleloves.github.io/web_project_4/
 
-* Figma
-* Images
+**Function**
 
-**Figma**
+In this project we create an interactive profile page that can have images and various profile info put into it such as names and comments.
 
-* [Link to the project in Figma](https://www.figma.com/file/SurN1jaeEQIhuZEDMhmWWf/Sprint-4-Around-The-U.S.-desktop-mobile?node-id=0%3A1)
+**Technology**
 
-**Images**
-
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-
-Have fun with JavaScript!
+Technology used in this project:
+Javascript
+Forms
+Submissions
+Grids
+Flexbox

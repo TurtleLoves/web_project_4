@@ -1,0 +1,30 @@
+.modal__submit {
+  margin: 48px auto 36px;
+  width: 358px;
+  height: 50px;
+  background-color: black;
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 22px;
+  color: white;
+  transition: 0.4s;
+}
+
+.modal__submit:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .modal__submit {
+    margin: 46px auto 25px;
+    width: 238px;
+    height: 46px;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 22px;
+    color: white;
+    transition: 0.4s;
+  }
+}

@@ -5,10 +5,18 @@
   margin: 45px auto 0;
 }
 
-@media screen and (max-width: 320px) {
-  .header{
-  width: 320px;
-  height: 56px;
-  margin: 28px auto 0;
+@media screen and (max-width: 880px) {
+  .header {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    box-sizing: border-box;
+    width: 320px;
+    height: 56px;
+    margin: 28px auto 0;
+    padding-left: 21px;
   }
 }
