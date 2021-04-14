@@ -1,4 +1,7 @@
 .elements__text-container {
   display: flex;
   justify-content: space-between;
+  margin-top: -5px;
+  background-color: white;
+  border-radius: 0 0 10px 10px;
 }

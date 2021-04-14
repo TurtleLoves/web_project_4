@@ -1,13 +1,15 @@
 .profile__edit-button {
+  display: flex;
   background-image: url(../../../images/pencil.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   position: relative;
-  bottom: 12px;
+  top: 5px;
   width: 24px;
   height: 24px;
-  margin: 0;
+  margin: auto;
+  padding: 0;
   border: 1px solid #ffffff;
   transition: 0.4s;
 }
@@ -23,18 +25,12 @@
 
 @media screen and (max-width: 880px) {
   .profile__edit-button {
-    position: relative;
-    bottom: 6px;
-    width: 18px;
-    height: 18px;
+    bottom: 25px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .profile__edit-button {
-    position: relative;
-    bottom: 6px;
-    width: 18px;
-    height: 18px;
+    bottom: 15px;
   }
 }

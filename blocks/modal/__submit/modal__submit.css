@@ -8,6 +8,7 @@
   line-height: 22px;
   color: white;
   transition: 0.4s;
+  border: none;
 }
 
 .modal__submit:hover {
