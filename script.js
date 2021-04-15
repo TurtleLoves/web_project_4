@@ -38,4 +38,3 @@ modal__form.addEventListener("submit", submit);
 // for (const heart of hearts) {
 //     heart.addEventListener("click", toggleHeart);
 // }
-

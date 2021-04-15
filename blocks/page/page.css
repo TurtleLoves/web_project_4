@@ -1,12 +1,10 @@
-/* * {
-  border: solid red 1px;
-} */
+* {
+  outline: solid red 1px;
+}
 
 .page {
   box-sizing: border-box;
-  width: 99.9vw;
-  max-width: 1280px;
-  min-width: 320px;
+  max-width: 99.9vw;
   background-color: #000000;
   font-family: "Inter", Arial, Helvetica, sans-serif;
   color: white;

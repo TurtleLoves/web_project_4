@@ -18,12 +18,3 @@
     margin: 0 10px 0 0;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .profile__name {
-    width: 200px;
-    font-size: 22px;
-    line-height: 27px;
-    margin: 0 10px 0 0;
-  }
-}
