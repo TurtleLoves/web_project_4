@@ -5,13 +5,13 @@
   margin: 45px auto 0;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
   .header {
     width: 600px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .header {
     box-sizing: border-box;
     width: 320px;

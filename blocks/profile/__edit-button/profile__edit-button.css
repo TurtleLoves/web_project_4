@@ -23,13 +23,13 @@
   outline: 0;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
   .profile__edit-button {
     bottom: 25px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .profile__edit-button {
     bottom: 15px;
   }

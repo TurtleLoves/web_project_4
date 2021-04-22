@@ -9,14 +9,14 @@
   text-overflow: ellipsis;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
   .profile__about-me {
     text-align: center;
     width: 200px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .profile__about-me {
     margin: 14px 0 0 0;
     font-size: 14px;

@@ -1,30 +1,9 @@
+@import url(./__overlay/modal__overlay.css);
 @import url(./__about-me/modal__about-me.css);
 @import url(./__close-icon/modal__close-icon.css);
+@import url(./__container/modal__container.css);
+@import url(./__form/modal__form.css);
 @import url(./__line/modal__line.css);
 @import url(./__name/modal__name.css);
 @import url(./__submit/modal__submit.css);
 @import url(./__title/modal__title.css);
-
-.modal {
-  position: fixed;
-  box-sizing: border-box;
-  width: 430px;
-  height: 330px;
-  left: calc(50% - 215px);
-  top: calc(50% - 165px);
-  background-color: white;
-  display: none;
-}
-
-.modal__display {
-  display: flex;
-}
-
-@media screen and (max-width: 600px) {
-  .modal {
-    width: 282px;
-    height: 322px;
-    left: calc(50% - 141px);
-    top: calc(50% - 161px);
-  }
-}

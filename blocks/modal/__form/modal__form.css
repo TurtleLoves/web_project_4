@@ -1,0 +1,12 @@
+.modal__form {
+  position: fixed;
+  box-sizing: border-box;
+  width: 430px;
+  height: 330px;
+  left: calc(50% - 215px);
+  top: calc(50% - 165px);
+  background-color: white;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}

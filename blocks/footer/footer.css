@@ -5,14 +5,14 @@
   margin: 68px auto 60px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
   .footer {
     width: 600px;
     margin: 50px auto 36px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .footer {
     width: 282px;
     margin: 50px auto 36px;

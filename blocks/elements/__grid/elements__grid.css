@@ -7,7 +7,7 @@
   row-gap: 20px;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 900px) {
   .elements__grid {
     width: 600px;
     grid-template-columns: repeat(2, 1fr);
@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .elements__grid {
     width: 282px;
     grid-template-columns: repeat(1, 1fr);

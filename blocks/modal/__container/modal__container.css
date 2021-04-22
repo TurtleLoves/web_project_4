@@ -1,0 +1,19 @@
+.modal__container {
+  position: fixed;
+  box-sizing: border-box;
+  width: 430px;
+  height: 330px;
+  left: calc(50% - 215px);
+  top: calc(50% - 165px);
+  background-color: white;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .modal__container {
+    width: 282px;
+    height: 322px;
+    left: calc(50% - 141px);
+    top: calc(50% - 161px);
+  }
+}
