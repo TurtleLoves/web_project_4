@@ -2,9 +2,9 @@ let profileName = document.querySelector(".profile__name");
 let profileAbout = document.querySelector(".profile__about-me");
 let profileEdit = document.querySelector(".profile__edit-button");
 let modal = document.querySelector(".modal");
-let modalName = document.querySelector(".modal__info_name");
-let modalAbout = document.querySelector(".modal__info_about-me");
-let modalClose = document.querySelector(".modal__close-icon");
+let modalName = document.querySelector(".modal_info_name");
+let modalAbout = document.querySelector(".modal_info_about-me");
+let Close = document.querySelector(".close-icon");
 let modalForm = document.querySelector(".modal__form");
 // let elements = document.querySelector(".elements");
 // let elements__heart = document.querySelector(".elements__heart");
@@ -32,7 +32,7 @@ function submit(evt) {
 // }
 
 profileEdit.addEventListener("click", open);
-modalClose.addEventListener("click", close);
+Close.addEventListener("click", close);
 modalForm.addEventListener("submit", submit);
 
 // for (const heart of hearts) {

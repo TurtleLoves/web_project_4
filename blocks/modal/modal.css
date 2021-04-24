@@ -1,7 +1,6 @@
-@import url(./__close-icon/modal__close-icon.css);
 @import url(./__container/modal__container.css);
 @import url(./__form/modal__form.css);
-@import url(./__info/modal__info.css);
+@import url(./_info/modal_info.css);
 @import url(./__submit/modal__submit.css);
 @import url(./__title/modal__title.css);
 
@@ -16,9 +15,5 @@
   z-index: 3;
   display: none;
   justify-content: center;
-  /* align-items: center; */
-}
-
-.modal_toggle {
-  display: flex;
+  align-items: center;
 }

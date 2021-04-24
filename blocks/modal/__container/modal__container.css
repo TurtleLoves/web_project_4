@@ -1,18 +1,16 @@
 .modal__container {
-  position: fixed;
   box-sizing: border-box;
   width: 430px;
-  left: calc(50% - 215px);
   top: calc(50% - 165px);
   background-color: white;
   z-index: 1;
   border-radius: 10px;
+  margin-bottom: calc(50% - 165px);
 }
 
 @media screen and (max-width: 625px) {
   .modal__container {
     width: 282px;
-    left: calc(50% - 141px);
-    top: calc(50% - 161px);
+    margin-top: 100%;
   }
 }
