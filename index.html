@@ -23,11 +23,11 @@
       <div class="profile__info">
         <div class="profile__name-container">
           <h1 class="profile__name">Jacques Cousteau</h1>
-          <button class="profile__edit-button" type="button"></button>
+          <button class="profile__edit-button" type="button" alt="Edit Button"></button>
         </div>
         <p class="profile__about-me">Explorer</p>
       </div>
-      <button class="profile__add-button" type="button"></button>
+      <button class="profile__add-button" type="button" alt="Add Button"></button>
     </section>
 
     <section class="elements">
@@ -36,48 +36,48 @@
         <div class="elements__container">
           <img class="elements__image" src="images/yosemite-valley.jpg" alt="Yosemite Valley">
           <div class="elements__text-container">
-            <p class="elements__text">Yosemite Valley</p>
-            <button class="elements__heart" type="button"></button>
+            <h2 class="elements__text">Yosemite Valley</h2>
+            <button class="elements__heart" type="button" alt="Like Button"></button>
           </div>
         </div>
 
         <div class="elements__container">
           <img class="elements__image" src="images/lake-louise.jpg" alt="Lake Louise">
           <div class="elements__text-container">
-            <p class="elements__text">Lake Louise</p>
-            <button class="elements__heart" type="button"></button>
+            <h2 class="elements__text">Lake Louise</h2>
+            <button class="elements__heart" type="button" alt="Like Button"></button>
           </div>
         </div>
 
         <div class="elements__container">
           <img class="elements__image" src="images/bald-mountains.jpg" alt="Bald Mountains">
           <div class="elements__text-container">
-            <p class="elements__text">Bald Mountains</p>
-            <button class="elements__heart" type="button"></button>
+            <h2 class="elements__text">Bald Mountains</h2>
+            <button class="elements__heart" type="button" alt="Like Button"></button>
           </div>
         </div>
 
         <div class="elements__container">
           <img class="elements__image" src="images/latemar.jpg" alt="Latemar">
           <div class="elements__text-container">
-            <p class="elements__text">Latemar</p>
-            <button class="elements__heart" type="button"></button>
+            <h2 class="elements__text">Latemar</h2>
+            <button class="elements__heart" type="button" alt="Like Button"></button>
           </div>
         </div>
 
         <div class="elements__container">
           <img class="elements__image" src="images/vanoise-national-park.jpg" alt="Vanoise National Park">
           <div class="elements__text-container">
-            <p class="elements__text">Vanoise National Park</p>
-            <button class="elements__heart" type="button"></button>
+            <h2 class="elements__text">Vanoise National Park</h2>
+            <button class="elements__heart" type="button" alt="Like Button"></button>
           </div>
         </div>
 
         <div class="elements__container">
           <img class="elements__image" src="images/lago-di-braies.jpg" alt="Lago di Braies">
           <div class="elements__text-container">
-            <p class="elements__text">Lago di Braies</p>
-            <button class="elements__heart" type="button"></button>
+            <h2 class="elements__text">Lago di Braies</h2>
+            <button class="elements__heart" type="button" alt="Like Button"></button>
           </div>
         </div>
 
@@ -90,21 +90,17 @@
     <p class="footer__copyright">&#169;2020 Around The U.S.</p>
   </footer>
 
-  <section class="modal">
-    <div class="modal__overlay">
-      <div class="modal__container">
-        <input class="modal__close-icon" type="image" name="close" src="./images/x.svg" alt="Close Button">
-        <form class="modal__form" name="info">
-          <h2 class="modal__title">Edit profile</h2>
-          <input class="modal__name" type="text" name="name" placeholder="Name" required>
-          <div class="modal__line"></div>
-          <input class="modal__about-me" type="text" name="about-me" placeholder="About me" required>
-          <div class="modal__line"></div>
-          <button class="modal__submit" type="submit">Save</button>
-        </form>
-      </div>
+  <div class="modal">
+    <div class="modal__container">
+      <button class="modal__close-icon" type="button" alt="Close Button"></button>
+      <form class="modal__form" name="info">
+        <h2 class="modal__title">Edit profile</h2>
+        <input class="modal__info modal__info_name" type="text" name="name" placeholder="Name" required>
+        <input class="modal__info modal__info_about-me" type="text" name="about-me" placeholder="About me" required>
+        <button class="modal__submit" type="submit">Save</button>
+      </form>
     </div>
-  </section>
+  </div>
 
   <script src="./script.js"></script>
 

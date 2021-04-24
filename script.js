@@ -1,9 +1,9 @@
 let profileName = document.querySelector(".profile__name");
 let profileAbout = document.querySelector(".profile__about-me");
 let profileEdit = document.querySelector(".profile__edit-button");
-let modalOverlay = document.querySelector(".modal__overlay");
-let modalName = document.querySelector(".modal__name");
-let modalAbout = document.querySelector(".modal__about-me");
+let modal = document.querySelector(".modal");
+let modalName = document.querySelector(".modal__info_name");
+let modalAbout = document.querySelector(".modal__info_about-me");
 let modalClose = document.querySelector(".modal__close-icon");
 let modalForm = document.querySelector(".modal__form");
 // let elements = document.querySelector(".elements");
@@ -13,11 +13,11 @@ let modalForm = document.querySelector(".modal__form");
 function open() {
     modalName.value = profileName.textContent;
     modalAbout.value = profileAbout.textContent;
-    modalOverlay.classList.add("modal__overlay_open");
+    modal.classList.add("modal_toggle");
 }
 
 function close() {
-    modalOverlay.classList.remove("modal__overlay_open");
+    modal.classList.remove("modal_toggle");
 }
 
 function submit(evt) {

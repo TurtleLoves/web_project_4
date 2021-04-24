@@ -1,0 +1,6 @@
+@media screen and (max-width: 600px) {
+  .modal__info_name {
+    margin: 76px auto 0;
+    width: 238px;
+  }
+}
