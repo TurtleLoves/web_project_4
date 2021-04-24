@@ -6,8 +6,9 @@
 @import url(./__title/modal__title.css);
 
 .modal {
-  width: 100vw;
-  height: 100vw;
+  box-sizing: border-box;
+  width: 99.9vw;
+  height: 99.9vw;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   right: 0;
@@ -15,7 +16,7 @@
   z-index: 3;
   display: none;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .modal_toggle {

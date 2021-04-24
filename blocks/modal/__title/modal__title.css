@@ -7,7 +7,7 @@
   color: black;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .modal__title {
     margin: 25px auto 0;
     width: 238px;

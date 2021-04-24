@@ -5,7 +5,7 @@
   height: 50px;
   background-color: black;
   font-size: 18px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 22px;
   color: white;
   transition: 0.4s;
@@ -19,16 +19,10 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 625px) {
   .modal__submit {
     margin: 46px auto 25px;
     width: 238px;
     height: 46px;
-    background-color: black;
-    font-size: 18px;
-    font-weight: 400px;
-    line-height: 22px;
-    color: white;
-    transition: 0.4s;
   }
 }
