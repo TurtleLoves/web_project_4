@@ -1,4 +1,4 @@
-.modal_info {
+.modal__info {
   border: none;
   display: flex;
   margin: 30px auto 0;
@@ -13,7 +13,7 @@
 }
 
 @media screen and (max-width: 625px) {
-  .modal_info {
+  .modal__info {
     padding-bottom: 9px;
     width: 238px;
   }
