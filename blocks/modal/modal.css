@@ -3,11 +3,12 @@
 @import url(./__info/modal__info.css);
 @import url(./__submit/modal__submit.css);
 @import url(./__title/modal__title.css);
+@import url(./__close-icon/modal__close-icon.css);
 
 .modal {
   box-sizing: border-box;
-  width: 99.9vw;
-  height: 99.9vw;
+  width: 99.9%;
+  height: 99.9%;
   background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   right: 0;

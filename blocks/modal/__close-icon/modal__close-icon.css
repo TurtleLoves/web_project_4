@@ -1,25 +1,25 @@
-.close-icon {
+.modal__close-icon {
   position: absolute;
-  top: -75px;
+  top: -40px;
   right: -40px;
   width: 40px;
   height: 40px;
   transition: 0.4s;
-  background-image: url(../../images/x.svg);
+  background-image: url(../../../images/x.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
   border: none;
 }
 
-.close-icon:hover {
+.modal__close-icon:hover {
   opacity: 0.6;
   cursor: pointer;
 }
 
 @media screen and (max-width: 625px) {
-  .close-icon {
-    top: -60px;
+  .modal__close-icon {
+    top: -35px;
     right: 0px;
     width: 26px;
     height: 26px;
