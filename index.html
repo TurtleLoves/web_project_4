@@ -30,58 +30,19 @@
       <button class="profile__add-button" type="button" aria-label="Add Button"></button>
     </section>
 
-    <section class="elements">
-      <div class="elements__grid">
-
-        <div class="elements__container">
-          <img class="elements__image" src="images/yosemite-valley.jpg" alt="Yosemite Valley">
-          <div class="elements__text-container">
-            <h2 class="elements__text">Yosemite Valley</h2>
-            <button class="elements__heart" type="button" aria-label="Like Button"></button>
+    <section class="elements-grid">
+      <template id="elements-template">
+        <div class="elements">
+          <div class="elements__container">
+            <button class="elements__delete" type="button" aria-label="Delete"></button>
+            <img class="elements__image" src="images/yosemite-valley.jpg" alt="Yosemite Valley">
+            <div class="elements__text-container">
+              <h2 class="elements__text">Yosemite Valley</h2>
+              <button class="elements__heart" type="button" aria-label="Like Button"></button>
+            </div>
           </div>
         </div>
-
-        <div class="elements__container">
-          <img class="elements__image" src="images/lake-louise.jpg" alt="Lake Louise">
-          <div class="elements__text-container">
-            <h2 class="elements__text">Lake Louise</h2>
-            <button class="elements__heart" type="button" aria-label="Like Button"></button>
-          </div>
-        </div>
-
-        <div class="elements__container">
-          <img class="elements__image" src="images/bald-mountains.jpg" alt="Bald Mountains">
-          <div class="elements__text-container">
-            <h2 class="elements__text">Bald Mountains</h2>
-            <button class="elements__heart" type="button" aria-label="Like Button"></button>
-          </div>
-        </div>
-
-        <div class="elements__container">
-          <img class="elements__image" src="images/latemar.jpg" alt="Latemar">
-          <div class="elements__text-container">
-            <h2 class="elements__text">Latemar</h2>
-            <button class="elements__heart" type="button" aria-label="Like Button"></button>
-          </div>
-        </div>
-
-        <div class="elements__container">
-          <img class="elements__image" src="images/vanoise-national-park.jpg" alt="Vanoise National Park">
-          <div class="elements__text-container">
-            <h2 class="elements__text">Vanoise National Park</h2>
-            <button class="elements__heart" type="button" aria-label="Like Button"></button>
-          </div>
-        </div>
-
-        <div class="elements__container">
-          <img class="elements__image" src="images/lago-di-braies.jpg" alt="Lago di Braies">
-          <div class="elements__text-container">
-            <h2 class="elements__text">Lago di Braies</h2>
-            <button class="elements__heart" type="button" aria-label="Like Button"></button>
-          </div>
-        </div>
-
-      </div>
+      </template>
     </section>
 
   </main>
@@ -90,15 +51,39 @@
     <p class="footer__copyright">&#169;2020 Around The U.S.</p>
   </footer>
 
-  <div class="modal">
+  <div class="modal modal_profile">
     <div class="modal__container">
-      <button class="modal__close-icon" type="button" aria-label="Close Button"></button>
-      <form class="modal__form" name="info">
+      <button class="modal__close-icon modal__close-icon_profile" type="button" aria-label="Close Button"></button>
+      <form class="modal__form modal__form_profile" name="info">
         <h2 class="modal__title">Edit profile</h2>
-        <input class="modal__info modal__info_key_name" type="text" name="name" placeholder="Name" required>
-        <input class="modal__info modal__info_key_about-me" type="text" name="about-me" placeholder="About me" required>
+        <input class="modal__info modal__info_value_name" type="text" name="name" placeholder="Name" required>
+        <input class="modal__info modal__info_value_about-me" type="text" name="about-me" placeholder="About me"
+          required>
         <button class="modal__submit" type="submit" aria-label="Submit Button">Save</button>
       </form>
+    </div>
+  </div>
+
+  <div class="modal modal_place">
+    <div class="modal__container">
+      <button class="modal__close-icon modal__close-icon_place" type="button" aria-label="Close Button"></button>
+      <form class="modal__form modal__form_place" name="info">
+        <h2 class="modal__title">New place</h2>
+        <input class="modal__info modal__info_value_title" type="text" name="title" placeholder="Title" required>
+        <input class="modal__info modal__info_value_image-link" type="text" name="image-link" placeholder="Image link"
+          required>
+        <button class="modal__submit" type="submit" aria-label="Submit Button">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal modal_image">
+    <div class="image-popup">
+      <div class="image-popup__container">
+        <button class="modal__close-icon modal__close-icon_image" type="button" aria-label="Close Button"></button>
+        <img class="image-popup__enlarge" src="" alt="">
+        <h2 class="image-popup__caption"></h2>
+      </div>
     </div>
   </div>
 

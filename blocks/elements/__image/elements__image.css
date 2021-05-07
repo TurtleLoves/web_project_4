@@ -2,4 +2,10 @@
   width: 282px;
   height: 282px;
   border-radius: 10px 10px 0 0;
+  transition: 0.4s;
+}
+
+.elements__image:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }

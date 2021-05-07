@@ -1,24 +1,6 @@
 @import url(./__container/elements__container.css);
-@import url(./__grid/elements__grid.css);
 @import url(./__heart/elements__heart.css);
 @import url(./__image/elements__image.css);
 @import url(./__text-container/elements__text-container.css);
 @import url(./__text/elements__text.css);
-
-.elements {
-  width: 880px;
-  margin: 50px auto 0;
-}
-
-@media screen and (max-width: 900px) {
-  .elements {
-    width: 600px;
-  }
-}
-
-@media screen and (max-width: 625px) {
-  .elements {
-    width: 282px;
-    margin: 36px auto 0;
-  }
-}
+@import url(./__delete/elements__delete.css);

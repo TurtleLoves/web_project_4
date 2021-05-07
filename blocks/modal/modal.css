@@ -14,7 +14,10 @@
   right: 0;
   position: fixed;
   z-index: 3;
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.4s linear;
 }
