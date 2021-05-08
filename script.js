@@ -72,8 +72,8 @@ closePlaceButton.addEventListener("click", closePlace);
 
 function submitPlace(evt) {
   evt.preventDefault();
-  const cardElement = addImageCard(modalTitle.value, modalImageLink.value);
-  elementsGrid.prepend(cardElement);
+  const newPlace = addPlaces(modalTitle.value, modalImageLink.value);
+  elementsGrid.prepend(newPlace);
   closePlace();
 }
 
