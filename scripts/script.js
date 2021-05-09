@@ -1,6 +1,5 @@
 // Multi-use
 const elementsGrid = document.querySelector(".elements-grid");
-const modal = document.querySelector(".modal");
 
 // PROFILE
 const profileModal = document.querySelector(".modal_profile");
@@ -29,7 +28,7 @@ const closeImageButton = document.querySelector(".modal__close-icon_image");
 // TOGGLE MODALS
 function modalToggle(modalToggle) {
   modalToggle.classList.toggle("modal_toggle");
-};
+}
 
 // OPEN PROFILE
 profileEditButton.addEventListener("click", function() {
@@ -87,7 +86,7 @@ function expand(imageVar) {
       imageCaption.textContent = elementsText.textContent;
       modalToggle(imageModal);
   });
-};
+}
 
 // CLOSE IMAGE
 closeImageButton.addEventListener("click", function () {
@@ -102,7 +101,7 @@ function like(likeVar) {
   likeButton.addEventListener("click", function (evt) {
       evt.target.classList.toggle("elements__heart_active");
   });
-};
+}
 
 // DELETE IMAGE
 
@@ -112,7 +111,7 @@ function deleted(deleteVar) {
   deleteButton.addEventListener("click", function (evt) {
       evt.target.closest(".elements").remove();
   });
-};
+}
 
 // ADDING PLACES
 
@@ -131,7 +130,7 @@ function addPlaces(place, url) {
   expand(templateClone);
 
   return templateClone;
-};
+}
 
 // INITIAL PAGE
 const initialCards = [
