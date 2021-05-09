@@ -26,47 +26,44 @@ const imageEnlarge = document.querySelector(".image-popup__enlarge");
 const imageCaption = document.querySelector(".image-popup__caption");
 const closeImageButton = document.querySelector(".modal__close-icon_image");
 
+// TOGGLE MODALS
+function modalToggle(modalToggle) {
+  modalToggle.classList.toggle("modal_toggle");
+};
+
 // OPEN PROFILE
-function openProfile() {
+profileEditButton.addEventListener("click", function() {
   modalName.value = profileName.textContent;
   modalAbout.value = profileAbout.textContent;
-  profileModal.classList.add("modal_toggle");
-};
-
-profileEditButton.addEventListener("click", openProfile);
+  modalToggle(profileModal);
+});
 
 // CLOSE PROFILE
-function closeProfile() {
-  profileModal.classList.remove("modal_toggle");
-};
-
-closeProfileButton.addEventListener("click", closeProfile);
+closeProfileButton.addEventListener("click", function () {
+  modalToggle(profileModal);
+});
 
 // SUBMIT PROFILE
 function submitProfile(evt) {
   evt.preventDefault();
   profileName.textContent = modalName.value;
   profileAbout.textContent = modalAbout.value;
-  closeProfile();
+  modalToggle(profileModal);
 }
 
 modalFormProfile.addEventListener("submit", submitProfile);
 
 // OPEN PLACE
-function openPlace() {
+addPlaceButton.addEventListener("click", function () {
   modalTitle.value = "";
   modalImageLink.value = "";
-  placeModal.classList.add("modal_toggle");
-}
-
-addPlaceButton.addEventListener("click", openPlace);
+  modalToggle(placeModal);
+});
 
 // CLOSE PLACE
-function closePlace() {
-  placeModal.classList.remove("modal_toggle");
-}
-
-closePlaceButton.addEventListener("click", closePlace);
+closePlaceButton.addEventListener("click", function () {
+  modalToggle(placeModal);
+});
 
 // SUBMIT PLACE
 
@@ -74,7 +71,7 @@ function submitPlace(evt) {
   evt.preventDefault();
   const newPlace = addPlaces(modalTitle.value, modalImageLink.value);
   elementsGrid.prepend(newPlace);
-  closePlace();
+  modalToggle(placeModal);
 }
 
 modalFormPlace.addEventListener("submit", submitPlace);
@@ -88,17 +85,14 @@ function expand(imageVar) {
   elementsImage.addEventListener("click", function () {
       imageEnlarge.src = elementsImage.src;
       imageCaption.textContent = elementsText.textContent;
-      imageModal.classList.add("modal_toggle");
+      modalToggle(imageModal);
   });
 };
 
 // CLOSE IMAGE
-
-function closeImage() {
-  imageModal.classList.remove("modal_toggle");
-}
-
-closeImageButton.addEventListener("click", closeImage);
+closeImageButton.addEventListener("click", function () {
+  modalToggle(imageModal);
+});
 
 // LIKE IMAGE
 
